@@ -43,7 +43,7 @@ for (let i = 0; i < callButtons.length; i++) {
         callDetail.innerHTML = `
             <div>
                 <h4>${serviceName}</h4>
-                <p>${serviceNumber}</p>
+                <p>${phoneNumber}</p>
             </div>
             <div>${localTimeWhenCall}</div>
         `;
