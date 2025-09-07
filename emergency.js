@@ -14,12 +14,23 @@ for (const heart of hearts) {
 const callButtons = document.getElementsByClassName('button2');
 const serviceNames = document.getElementsByClassName('service-name');
 const phoneNumbers = document.getElementsByClassName('phone-number');
+const coinCounter = document.getElementById('coincounter');
+let coins = 100;
 
 for (let i = 0; i < callButtons.length; i++) {
     callButtons[i].addEventListener('click', function () {
-        const serviceName = serviceNames[i].innerText;
-        const serviceNumber = phoneNumbers[i].innerText;
 
-        alert(`Calling ${serviceName} at ${serviceNumber}`);
+        if (coins < 20) {
+            alert('Not enough coins to make a call!');
+            return;
+        }
+
+        const serviceName = serviceNames[i].innerText;
+        const phoneNumber = phoneNumbers[i].innerText;
+
+        coins -= 20;
+        coinCounter.innerText = coins;
+
+        alert(`Calling ${serviceName} at ${phoneNumber}`);
     });
 }
