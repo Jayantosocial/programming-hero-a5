@@ -1,0 +1,159 @@
+/* font family import */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+.hind-madurai {
+  font-family: "Hind Madurai", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.width {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+.logo{
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+header h3 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.count-box{
+    gap: 10px;
+}
+
+.count{
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 52px;
+    width: 123px;
+    background-color: rgba(65, 255, 107, 0.10);
+    border-radius: 50px;
+}
+
+.count2{
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 52px;
+    width: 123px;
+    background-color: #00A63E;
+    border-radius: 50px;
+    color: white;
+}
+
+.count img {
+    height: 20px;
+}
+
+.hero {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #013223 0%, #006747 49.99%, #013223 100%);
+    color: white;
+    padding: 30px 60px;
+}
+
+.hero img {
+    height: 100px;
+    width: 100px;
+}
+.icon-card{
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: #FFE3E2;
+}
+
+.icon-card img{
+    height: 32px;
+}
+
+.icon-row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-boxes{
+
+    padding: 50px 0px;
+}
+
+.cards{
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card{
+    padding: 32px;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.button1 {
+    width: 49%;
+    padding: 10px 0px;
+    border: 1px solid #D4D6D5;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.button2 {
+    width: 49%;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+}
