@@ -51,3 +51,9 @@ for (let i = 0; i < callButtons.length; i++) {
         callList.appendChild(callDetail);
     });
 }
+
+const clearButton = document.getElementById('button3');
+
+clearButton.addEventListener('click', function () {
+    callList.innerHTML = '';
+});
