@@ -17,6 +17,8 @@ const phoneNumbers = document.getElementsByClassName('phone-number');
 const coinCounter = document.getElementById('coincounter');
 let coins = 100;
 
+const callList = document.getElementById('call-list');
+
 for (let i = 0; i < callButtons.length; i++) {
     callButtons[i].addEventListener('click', function () {
 
@@ -32,5 +34,20 @@ for (let i = 0; i < callButtons.length; i++) {
         coinCounter.innerText = coins;
 
         alert(`Calling ${serviceName} at ${phoneNumber}`);
+
+        const now = new Date();
+        const localTimeWhenCall = now.toLocaleTimeString();
+
+        const callDetail = document.createElement('div');
+        callDetail.className = 'flex call-details';
+        callDetail.innerHTML = `
+            <div>
+                <h4>${serviceName}</h4>
+                <p>${serviceNumber}</p>
+            </div>
+            <div>${localTimeWhenCall}</div>
+        `;
+        
+        callList.appendChild(callDetail);
     });
 }
