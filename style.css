@@ -194,3 +194,46 @@ header h3 {
     flex-direction: column;
     gap: 16px;
 }
+
+@media (max-width: 400px) {
+    .width {
+        width: 100%;
+    }
+
+    header{
+        flex-direction: column;
+        justify-self: center;
+        justify-self: center;
+        gap: 20px;
+    }
+
+    .hero h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .hero p{
+        text-align: center;
+    }
+
+    .card-boxes{
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 0px;
+        width: 85%;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .sidebar{
+    width: 90%;
+}
+}
