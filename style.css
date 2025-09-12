@@ -141,6 +141,13 @@ header h3 {
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
+.label{
+    background-color: #F2F2F2;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
 .button1 {
     width: 49%;
     padding: 10px 0px;
